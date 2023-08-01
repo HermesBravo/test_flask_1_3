@@ -1,4 +1,3 @@
-feature/alfa
 # Alfa
 
 - Endpoint "/read/:content" "payload":foo
@@ -8,5 +7,5 @@ feature/alfa
 - Endpoint "/delete/:content" "payload":qux
 - Endpoint "/put/:content" "payload":echo
 
-#Charlie
+# Charlie
 - los endpoints funcionan correctamente.
