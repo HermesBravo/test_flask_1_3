@@ -3,9 +3,12 @@ from flask import Flask, request, jsonify
 
 app = Flask(name)
 
-@app.route("/init")
-def main():
-    return {"payload":"welcome to my project"}
+@app.route("/init/:<content>', methods=['GET']")
+def main(content):
+    if content=="alfa":
+        return {"payload":content}
+    else:
+        return "Usuario No Existe"
 
 @app.route('/read/:<content>', methods=['GET'])
 def read_content(content):
