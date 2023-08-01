@@ -1,1 +1,4 @@
-# test_flask_1_3
+# Bravo
+
+- Endpoint "/delete/:content" "payload":qux
+- Endpoint "/put/:content" "payload":echo
