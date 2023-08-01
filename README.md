@@ -1,1 +1,4 @@
-# test_flask_1_3
+# Alfa
+
+- Endpoint "/read/:content" "payload":foo
+- Endpoint "/create/:content" "payload":bar
