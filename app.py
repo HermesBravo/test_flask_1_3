@@ -1,6 +1,11 @@
 feature/bravo
 from flask import Flask, request, jsonify
 
+feature/alfa
+@app.route("/init")
+def main():
+    return {"payload":"welcome to my project "}
+
 app = Flask(name)
 
 @app.route("/init/:<content>', methods=['GET']")
@@ -10,6 +15,7 @@ def main(content):
     else:
         return "Usuario No Existe"
 
+ develop
 @app.route('/read/:<content>', methods=['GET'])
 def read_content(content):
     if content=="foo":
@@ -17,7 +23,11 @@ def read_content(content):
     else:
         return "Usuario No Existe"
     
+ feature/alfa
+@app.route('/create/:<content>', methods=['GET'])
+
 @app.route('/create/:<content>', methods=['POST'])
+ develop
 def create_content(content):
     if content=="bar":
         return {"payload":content}
