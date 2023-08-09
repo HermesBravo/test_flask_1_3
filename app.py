@@ -1,7 +1,7 @@
-feature/bravo
+#feature/bravo
 from flask import Flask, request, jsonify
 
-feature/alfa
+#feature/alfa
 @app.route("/init")
 def main():
     return {"payload":"welcome to my project "}
@@ -15,7 +15,7 @@ def main(content):
     else:
         return "Usuario No Existe"
 
- develop
+ #develop
 @app.route('/read/:<content>', methods=['GET'])
 def read_content(content):
     if content=="foo":
@@ -23,7 +23,7 @@ def read_content(content):
     else:
         return "Usuario No Existe"
     
- feature/alfa
+ #feature/alfa
 @app.route('/create/:<content>', methods=['GET'])
 
 @app.route('/create/:<content>', methods=['POST'])
@@ -34,14 +34,14 @@ def create_content(content):
     else:
         return "Usuario No Existe"
 
-@app.route('/delete/<content>', methods=['DELETE'])
+@app.route('/delete/:<content>', methods=['DELETE'])
 def delete_content(content):
     if content == "qux":
         return {"payload": content}
     else:
         return "Usuario No Existe"
 
-@app.route('/put/<content>', methods=['PUT'])
+@app.route('/put/:<content>', methods=['PUT'])
 def put_content(content):
     if content == "echo":
         return {"payload": content}
